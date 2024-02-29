@@ -1,0 +1,13 @@
+//icon
+@import '../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css';
+// font
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
+// bootstrap
+@import "./custom/bootstrap";
+// 自訂義樣式
+@import "./custom/mixin";
+@import "./custom/custom";
+
+.test{
+  background-image: url('../images/video-bg.jpg.webp');
+}

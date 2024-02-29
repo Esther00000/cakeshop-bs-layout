@@ -1,0 +1,39 @@
+@mixin md {
+  @media(min-width:768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media(min-width:992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media(min-width:1200px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media(min-width:1440px) {
+    @content;
+  }
+}
+
+@mixin background-image-styly{
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin section-padding{
+  padding: 40px 0;
+  @include md{
+    padding: 60px 0;
+  }
+  @include lg{
+    padding: 80px 0;
+  }
+}

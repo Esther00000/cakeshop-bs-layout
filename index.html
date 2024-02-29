@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg flex-lg-column py-30 py-md-16 py-lg-30"
+      >
+        <div class="container">
+          <div class="">
+            <ul class="d-none d-lg-flex gap-20">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand me-auto mx-lg-auto" href="#">
+            <img src="images/logo.png.webp" alt="logo" class="img-fluid" />
+          </a>
+          <a class="btn btn-outline-primary d-none d-lg-block px-20 py-12"
+            >Call Us: +10 783 346 4378</a
+          >
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            class="btn btn-outline-primary d-lg-none ms-auto"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse px-20" id="navbarContent">
+          <ul class="navbar-nav gap-20">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                >Cakes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="dropdown-toggle nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li class="mb-8">
+                  <a class="dropdown-item custom-nav-link-hover" href="#"
+                    >Blog</a
+                  >
+                </li>
+                <li class="mb-8">
+                  <a class="dropdown-item custom-nav-link-hover" href="#"
+                    >Blog Details</a
+                  >
+                </li>
+                <li class="mb-8">
+                  <a class="dropdown-item custom-nav-link-hover" href="#"
+                    >Elements</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-bg-image">
+          <div class="container">
+            <div class="col-md-8 col-lg-6">
+              <h1
+                class="display-2 poiret mb-20"
+                data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
+                Healthy Made Delicious Cake
+              </h1>
+              <button
+                type="button"
+                class="order-btn"
+                data-aos="fade-up"
+                data-aos-delay="1500"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- about -->
+    <section class="section-spacing">
+      <div class="container">
+        <h2 class="poiret fs-24 fs-md-30 text-center custom-title-underline">
+          This is Schilers. Awesome Food Theme. <br />
+          Purchase it and eat Burgers.
+        </h2>
+        <div class="row">
+          <div class="col-md-8 col-lg-6" data-aos="zoom-in">
+            <div class="d-flex flex-column justify-content-between h-100">
+              <h4 class="poiret text-primary mb-28">
+                This is Schilers. Awesome Food Theme.<br />
+                Purchase it and eat Burgers.
+              </h4>
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercita tion ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute dolor in reprehen
+                derit in voluptate velit esse cillum.
+              </p>
+              <p class="mb-16">
+                Consectetur adipiscing elit, sed do eiusmod tempor dunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercita tion ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute dolor in reprehen derit in
+                voluptate velit esse cillum.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-6" data-aos="zoom-in">
+            <div class="about-image">
+              <img
+                src="images/about1.jpg.webp"
+                class="img-fluid"
+                alt="about-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products -->
+    <section>
+      <div class="container">
+        <div class="swiper-container position-relative" data-aos="zoom-in">
+          <div class="swiper productsSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="mb-20">
+                    <a class="product-image">
+                      <img
+                        src="images/items1.jpg.webp"
+                        alt="product 1"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-text">
+                    <h4 class="poiret mb-8 fs-18">Cashmere Tank + Bag</h4>
+                    <p class="text-primary fs-20">$98.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="mb-20">
+                    <a class="product-image">
+                      <img
+                        src="images/items2.jpg.webp"
+                        alt="product 2"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-text">
+                    <h4 class="poiret mb-8 fs-18">Delightful Lemon</h4>
+                    <p class="text-primary fs-20">$98.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="mb-20">
+                    <a class="product-image">
+                      <img
+                        src="images/items3.jpg.webp"
+                        alt="product 3"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-text">
+                    <h4 class="poiret mb-8 fs-18">Sweet Suprise</h4>
+                    <p class="text-primary fs-20">$98.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="mb-20">
+                    <a class="product-image">
+                      <img
+                        src="images/items2.jpg.webp"
+                        alt="product 2"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-text">
+                    <h4 class="poiret mb-8 fs-18">Cashmere Tank + Bag</h4>
+                    <p class="text-primary fs-20">$98.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next productsSwiper-button-next"></div>
+          <div class="swiper-button-prev productsSwiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- vedio -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="section-vedio-bg" data-aos="zoom-in">
+          <div class="mx-auto">
+            <a class="vedio-btn">
+              <i
+                class="fa-solid fa-play fs-28 position-absolute top-50 start-50 translate-middle"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Food Lover's Say -->
+    <section>
+      <div class="container">
+        <h2 class="poiret fs-24 fs-md-30 text-center mb-30">
+          Food Lover's Say
+        </h2>
+        <div class="row gy-20 gy-lg-0" data-aos="zoom-in">
+          <div class="col-lg-4 custom-border border-start-lg-0">
+            <div class="lover-box">
+              <div class="lover-text mb-36">
+                <!-- rating -->
+                <ul class="d-flex align-items-center gap-4 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <!-- text -->
+                <p class="fs-24">
+                  "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter
+                  labore et dolore magna.
+                </p>
+              </div>
+              <div class="lover-img mb-24">
+                <img
+                  src="images/customer3.png.webp"
+                  alt="customer"
+                  class="img-fluid"
+                />
+                <span class="ms-8 align-middle">Wilma Mumduya</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 custom-border">
+            <div class="lover-box">
+              <div class="lover-text mb-36">
+                <!-- rating -->
+                <ul class="d-flex align-items-center gap-4 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <!-- text -->
+                <p class="fs-24">
+                  "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter
+                  labore et dolore magna.
+                </p>
+              </div>
+              <div class="lover-img mb-24">
+                <img
+                  src="images/customer3.png.webp"
+                  alt="customer"
+                  class="img-fluid"
+                />
+                <span class="ms-8 align-middle">Wilma Mumduya</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 custom-border border-end-lg-0">
+            <div class="lover-box">
+              <div class="lover-text mb-36">
+                <!-- rating -->
+                <ul class="d-flex align-items-center gap-4 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <!-- text -->
+                <p class="fs-24">
+                  "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter
+                  labore et dolore magna.
+                </p>
+              </div>
+              <div class="lover-img mb-24">
+                <img
+                  src="images/customer3.png.webp"
+                  alt="customer"
+                  class="img-fluid"
+                />
+                <span class="ms-8 align-middle">Wilma Mumduya</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="mb-30 d-flex justify-content-between align-items-center">
+          <h2 class="poiret fs-24 fs-md-30">Our Blogs</h2>
+          <a href="#" class="order-btn">MORE BLOG</a>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-xl-2 gy-24" data-aos="zoom-in">
+          <div class="col">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img
+                    src="images/blog1.jpg.webp"
+                    class="rounded-start w-100 mh-305 mh-md-370 h-100 object-fit-cover"
+                    alt="blog1"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="card-body custom-border border-start-0 h-100 d-flex flex-column justify-content-between py-60 px-40 p-xl-30"
+                  >
+                    <div class="">
+                      <h5 class="card-title text-primary poiret fs-24 mb-20">
+                        Tomato, black olive, feta & anchovy tart ulla mco
+                        laboris
+                      </h5>
+                      <p class="card-text mb-30">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor dunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercita
+                        tion ullamco laboris nisi ut aliquip.
+                      </p>
+                    </div>
+                    <div class="">
+                      <a href="#" class="link-primary custom-learnMore-btn"
+                        >LEARN MORE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img
+                    src="images/blog2.jpg.webp"
+                    class="rounded-start w-100 mh-305 mh-md-370 h-100 object-fit-cover"
+                    alt="blog2"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="card-body custom-border border-start-0 h-100 d-flex flex-column justify-content-between py-60 px-40 p-lg-30"
+                  >
+                    <div class="">
+                      <h5 class="card-title text-primary poiret fs-24 mb-20">
+                        Tomato, black olive, feta & anchovy tart ulla mco
+                        laboris
+                      </h5>
+                      <p class="card-text mb-30">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor dunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercita
+                        tion ullamco laboris nisi ut aliquip.
+                      </p>
+                    </div>
+                    <div class="">
+                      <a href="#" class="link-primary custom-learnMore-btn"
+                        >LEARN MORE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Follow us on Instagram -->
+    <section>
+      <div class="container">
+        <div class="d-flex flex-column align-items-center gap-30 mb-30">
+          <h2 class="poiret fs-24 fs-md-30">Follow us on Instagram</h2>
+          <div data-aos="zoom-in">
+            <a
+              class="btn btn-outline-primary px-20 py-12 rounded-0 d-inline-block mx-auto"
+              ><i class="fa-brands fa-instagram me-8"></i>Cakeshop</a
+            >
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-20 gy-lg-0"
+          data-aos="zoom-in"
+        >
+          <div class="col">
+            <a class="d-block h-100">
+              <img
+                src="images/instra1.jpg.webp"
+                alt="ig1"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a class="d-block h-100">
+              <img
+                src="images/instra2.jpg.webp"
+                alt="ig2"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a class="d-block h-100">
+              <img
+                src="images/instra3.jpg.webp"
+                alt="ig3"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a class="d-block h-100">
+              <img
+                src="images/instra4.jpg.webp"
+                alt="ig4"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer data-aos="zoom-in">
+      <div class="container">
+        <div
+          class="d-md-flex align-items-center justify-content-between pb-20 custom-bottom-border"
+        >
+          <a href="#">
+            <img src="images/logo.png.webp" class="img-fluid" alt="logo" />
+          </a>
+          <nav>
+            <ul class="navbar-nav flex-row gap-20">
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">Cakes</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="py-60">
+          <div class="row gy-20">
+            <div class="col-md-10 col-lg-5 me-auto mb-40">
+              <p class="mb-40">
+                Consectetur adipiscing elit, sed do eiusmod tempor dunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercita tion ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+              <div class="row row-cols-3 gx-8">
+                <div class="col">
+                  <a type="button" class="media-btn">
+                    <i class="fa-brands fa-instagram me-8"></i>Instagram
+                  </a>
+                </div>
+                <div class="col">
+                  <a type="button" class="media-btn">
+                    <i class="fa-brands fa-facebook me-8"></i>Facebook
+                  </a>
+                </div>
+                <div class="col">
+                  <a type="button" class="media-btn">
+                    <i class="fa-brands fa-twitter me-8"></i>Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="">
+                <i class="fa-solid fa-location-arrow fs-24 mb-16"></i>
+                <h4 class="text-primary fs-24 poiret">Location</h4>
+                <p>4736 Poe Lane, HOT SPRINGS, Montana-59845</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2 ms-auto">
+              <div class="">
+                <i class="fa-solid fa-phone fs-24 mb-16"></i>
+                <h4 class="text-primary fs-24 poiret">Contact</h4>
+                <p class="mb-8">913-473-7000</p>
+                <p>contact@cakeshop.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="container">
+          <div class="text-center">
+            <p>
+              Copyright ©2024 All rights reserved | This template is made with<i
+                class="fa-solid fa-heart text-primary mx-8"
+              ></i>
+              by
+              <a href="https://colorlib.com/wp/templates/" target="_blank"
+                >Colorlib</a
+              >
+            </p>
+            <p>僅供練習非商用</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
+<!-- 
+
+  https://preview.colorlib.com/#cakeshop
+ -->

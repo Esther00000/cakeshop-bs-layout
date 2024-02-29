@@ -1,0 +1,227 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+}
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+.poiret{
+  font-family: "Poiret One", sans-serif;
+}
+.section-spacing{
+  padding: 40px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  @include lg {
+    padding: 80px 0;
+  }
+}
+.custom-nav-link-hover{
+  padding-left: 12px;
+  border-radius: 4px;
+  @include lg {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: $primary;
+      transition: .3s linear;
+    }
+
+  }
+  &:hover{
+    background-color: $secondary;
+    color: $black;
+    @include lg {
+      background-color: transparent;
+      color: $primary;
+      &::before{
+        width: 100%;
+      }
+    }
+  }
+}
+.custom-title-underline{
+  position: relative;
+  margin-bottom: 62px;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    background-color: $primary;
+    margin: 0 auto;
+  }
+}
+.order-btn{
+  line-height: 1.5;
+  padding: 16px 40px;
+  background-color: $primary;
+  border-radius: 4px;
+  color: $black;
+  transition: .3s linear;
+  &:hover{
+    border: 1px solid $primary;
+    background-color: transparent;
+    color: $primary;
+  }
+}
+.media-btn{
+  padding: 16px 40px;
+  color: $light;
+  background-color: transparent;
+  display: block;
+  border: 1px solid rgba($white, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i{
+    vertical-align: middle;
+  }
+  &:hover{
+    color: $primary;
+    border: 1px solid $primary;
+  }
+}
+.custom-border{
+  border: 1px solid rgba($white, 0.2);
+}
+.custom-bottom-border {
+  border-bottom: 1px solid rgba($white, 0.2);
+}
+.hero-bg-image{
+  background-image: url('../images/h1_hero1.jpg.webp');
+  @include background-image-styly;
+  height: calc(100vh - 144px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba($black,0.6);
+  background-blend-mode: multiply;
+  @include md {
+    height: calc(100vh - 116px);
+  }
+  @include lg {
+    height: calc(100vh - 184px);
+  }
+}
+.product-image{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  
+  &::after{
+    content: 'Add to cart';
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    width: 100%;
+    height: 50px;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    transition: .3s linear;
+  }
+  &:hover{
+    &::after{
+      bottom: 0;
+    }
+  }
+}
+.productsSwiper-button-next,.productsSwiper-button-prev{
+  color: $primary;
+  display: none;
+  @include md{
+    display: block;
+  }
+}
+.productsSwiper-button-next{
+  right: -35px;
+}
+.productsSwiper-button-prev{
+  left: -35px;
+}
+.section-vedio-bg{
+  width: 100%;
+  height: 300px;
+  background-image: url('../images/video-bg.jpg.webp');
+  @include background-image-styly;
+  background-color: rgba($color: $primary, $alpha: 0.3);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  @include md{
+    height: 400px;
+  }
+  @include lg{
+    height: 668px;
+  }
+}
+.vedio-btn{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $primary;
+  border-radius: 50%;
+  .fa-play{
+    color: $black;
+  }
+  &:hover{
+    background-color: $black;
+    .fa-play{
+      color: $primary;
+    }
+  }
+  @include md{
+    width: 100px;
+    height: 100px;
+  }
+}
+.lover-box{
+  padding: 40px 46px;
+}
+.custom-learnMore-btn{
+  position: relative;
+  transition: .3s linear;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $primary;
+    left: 0;
+    bottom: -10px;
+  }
+  &:hover{
+    letter-spacing: 1px;
+  }
+}
+.blog-max-h{
+  max-height: 305px;
+  @include md{
+    max-height: 370px;
+  }
+}
