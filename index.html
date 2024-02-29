@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" crossorigin src="/cakeshop-bs-layout/assets/index-C6hUnhhY.js"></script>
+    <link rel="stylesheet" crossorigin href="/cakeshop-bs-layout/assets/index-Nur2_1Rx.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg flex-lg-column py-30 py-md-16 py-lg-30"
+      >
+        <div class="container">
+          <div class="">
+            <ul class="d-none d-lg-flex gap-20">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand me-auto mx-lg-auto" href="#">
+            <img src="data:image/webp;base64,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" alt="logo" class="img-fluid" />
+          </a>
+          <a class="btn btn-outline-primary d-none d-lg-block px-20 py-12"
+            >Call Us: +10 783 346 4378</a
+          >
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            class="btn btn-outline-primary d-lg-none ms-auto"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse px-20" id="navbarContent">
+          <ul class="navbar-nav gap-20">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                >Cakes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="dropdown-toggle nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li class="mb-8">
+                  <a class="dropdown-item custom-nav-link-hover" href="#"
+                    >Blog</a
+                  >
+                </li>
+                <li class="mb-8">
+                  <a class="dropdown-item custom-nav-link-hover" href="#"
+                    >Blog Details</a
+                  >
+                </li>
+                <li class="mb-8">
+                  <a class="dropdown-item custom-nav-link-hover" href="#"
+                    >Elements</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link custom-nav-link-hover custom-nav-link-hover-line-lg"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-bg-image">
+          <div class="container">
+            <div class="col-md-8 col-lg-6">
+              <h1
+                class="display-2 poiret mb-20"
+                data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
+                Healthy Made Delicious Cake
+              </h1>
+              <button
+                type="button"
+                class="order-btn"
+                data-aos="fade-up"
+                data-aos-delay="1500"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- about -->
+    <section class="section-spacing">
+      <div class="container">
+        <h2 class="poiret fs-24 fs-md-30 text-center custom-title-underline">
+          This is Schilers. Awesome Food Theme. <br />
+          Purchase it and eat Burgers.
+        </h2>
+        <div class="row">
+          <div class="col-md-8 col-lg-6" data-aos="zoom-in">
+            <div class="d-flex flex-column justify-content-between h-100">
+              <h4 class="poiret text-primary mb-28">
+                This is Schilers. Awesome Food Theme.<br />
+                Purchase it and eat Burgers.
+              </h4>
+              <p class="mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercita tion ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute dolor in reprehen
+                derit in voluptate velit esse cillum.
+              </p>
+              <p class="mb-16">
+                Consectetur adipiscing elit, sed do eiusmod tempor dunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercita tion ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute dolor in reprehen derit in
+                voluptate velit esse cillum.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-6" data-aos="zoom-in">
+            <div class="about-image">
+              <img
+                src="/cakeshop-bs-layout/assets/about1.jpg-DfdjswIz.webp"
+                class="img-fluid"
+                alt="about-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products -->
+    <section>
+      <div class="container">
+        <div class="swiper-container position-relative" data-aos="zoom-in">
+          <div class="swiper productsSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="mb-20">
+                    <a class="product-image">
+                      <img
+                        src="/cakeshop-bs-layout/assets/items1.jpg-DjaiCt93.webp"
+                        alt="product 1"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-text">
+                    <h4 class="poiret mb-8 fs-18">Cashmere Tank + Bag</h4>
+                    <p class="text-primary fs-20">$98.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="mb-20">
+                    <a class="product-image">
+                      <img
+                        src="/cakeshop-bs-layout/assets/items2.jpg-EVs0tWJs.webp"
+                        alt="product 2"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-text">
+                    <h4 class="poiret mb-8 fs-18">Delightful Lemon</h4>
+                    <p class="text-primary fs-20">$98.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="mb-20">
+                    <a class="product-image">
+                      <img
+                        src="/cakeshop-bs-layout/assets/items3.jpg-DHJncbBK.webp"
+                        alt="product 3"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-text">
+                    <h4 class="poiret mb-8 fs-18">Sweet Suprise</h4>
+                    <p class="text-primary fs-20">$98.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="mb-20">
+                    <a class="product-image">
+                      <img
+                        src="/cakeshop-bs-layout/assets/items2.jpg-EVs0tWJs.webp"
+                        alt="product 2"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-text">
+                    <h4 class="poiret mb-8 fs-18">Cashmere Tank + Bag</h4>
+                    <p class="text-primary fs-20">$98.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next productsSwiper-button-next"></div>
+          <div class="swiper-button-prev productsSwiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- vedio -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="section-vedio-bg" data-aos="zoom-in">
+          <div class="mx-auto">
+            <a class="vedio-btn">
+              <i
+                class="fa-solid fa-play fs-28 position-absolute top-50 start-50 translate-middle"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Food Lover's Say -->
+    <section>
+      <div class="container">
+        <h2 class="poiret fs-24 fs-md-30 text-center mb-30">
+          Food Lover's Say
+        </h2>
+        <div class="row gy-20 gy-lg-0" data-aos="zoom-in">
+          <div class="col-lg-4 custom-border border-start-lg-0">
+            <div class="lover-box">
+              <div class="lover-text mb-36">
+                <!-- rating -->
+                <ul class="d-flex align-items-center gap-4 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <!-- text -->
+                <p class="fs-24">
+                  "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter
+                  labore et dolore magna.
+                </p>
+              </div>
+              <div class="lover-img mb-24">
+                <img
+                  src="data:image/webp;base64,UklGRlADAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMYAAAABgFTbdt3mQrgQBEkQDEEQLhMbgkYZa56kFhMLgNd6/erzVgFExARgMKRcqlktOQXMp07rPsU51GXDTZywXTa1xSHZdPVxt4U7e3ZbunfIFuuPzZbHX9jWNf6QORQAXh4uAjKXAk4fJ4I5DclLyl5y8VKql9P+3eqlFi+P7CZ5ScFLQPVRAfkQQBeNAORBAMC2rvEH4rqI37VK+PtYc6CTh9k97WAPILvvScLodtvUFjFOtbEmYipV+54i5oeUy9OsPh8pYBBWUDggZAIAAPAKAJ0BKigAKAA+bSqQRaQioZccBzBABsSgC7M5HoYKSt0HLaDCVKOgiI6yVaGpmxZ9cxiDk1F84Z//pUPAwmuZ7jAwcVdiZqidlWNBA8bJ4sRPGL8HPsl7bwzb50X0AAD+/VPsHHHvO2GNk+1DCeP4wXYlDANpeXfhkbd+II9pGcevOT+pEk+tAGzMa2Hhme8vjFo8KBu7bC9QLvR7zaux4ijV9BODW3uGwOTrXyFfsH42z+Ym751WGJfKVMOr8X5bT0vUNvWOGI6/HnNgY4VBZhxW2Xvw5fMVoMysSfc/fJ6Jti8mj7FpLWrFTox0CBqbEquV1Q+ueJvOK4DiAZiNFkK4udAQt9/rXgpYfLMOvtvqctvEMmqEc4awwmvOYNQxthx2ieNcFoRdlIygCV4sPD2M9elYHe9rOp/I0dJ9AdtoHtONJcv/0pcwd2/lIKjVKdVq7fVCn+ew8kXiFvChNktc3S81TwLi/2tsxM6ruzJmnlFDPXAvqaBYrntWdffTJ8H1WqvWjyJjyRQjnraMAvBZwIHyEL/0VilbkZH2Qj6RxCDPtEQGvpUSpQfJt7ecXwY60D+y4g+eVe8nki346FoVRxwCfn/JMaJ+QQbiZW45XK29mgn4r3bKDgeeIVP12c1+UU60A5lfn7q3NSjKTV1TFdwmR0yoLmQgVhfg50hZfw7cLuh/Sv+zzAceeOt/P162Q/G6xzTfUEse57OVXgXK/LI2KEs++mwz1v26fVKxCCDbnw7piUJ9LDS5gi7hyg/TWWvfG4TFfdSIki/vBz+ToaBfVLa3Jp8sFQ9vpY94AA=="
+                  alt="customer"
+                  class="img-fluid"
+                />
+                <span class="ms-8 align-middle">Wilma Mumduya</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 custom-border">
+            <div class="lover-box">
+              <div class="lover-text mb-36">
+                <!-- rating -->
+                <ul class="d-flex align-items-center gap-4 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <!-- text -->
+                <p class="fs-24">
+                  "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter
+                  labore et dolore magna.
+                </p>
+              </div>
+              <div class="lover-img mb-24">
+                <img
+                  src="data:image/webp;base64,UklGRlADAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMYAAAABgFTbdt3mQrgQBEkQDEEQLhMbgkYZa56kFhMLgNd6/erzVgFExARgMKRcqlktOQXMp07rPsU51GXDTZywXTa1xSHZdPVxt4U7e3ZbunfIFuuPzZbHX9jWNf6QORQAXh4uAjKXAk4fJ4I5DclLyl5y8VKql9P+3eqlFi+P7CZ5ScFLQPVRAfkQQBeNAORBAMC2rvEH4rqI37VK+PtYc6CTh9k97WAPILvvScLodtvUFjFOtbEmYipV+54i5oeUy9OsPh8pYBBWUDggZAIAAPAKAJ0BKigAKAA+bSqQRaQioZccBzBABsSgC7M5HoYKSt0HLaDCVKOgiI6yVaGpmxZ9cxiDk1F84Z//pUPAwmuZ7jAwcVdiZqidlWNBA8bJ4sRPGL8HPsl7bwzb50X0AAD+/VPsHHHvO2GNk+1DCeP4wXYlDANpeXfhkbd+II9pGcevOT+pEk+tAGzMa2Hhme8vjFo8KBu7bC9QLvR7zaux4ijV9BODW3uGwOTrXyFfsH42z+Ym751WGJfKVMOr8X5bT0vUNvWOGI6/HnNgY4VBZhxW2Xvw5fMVoMysSfc/fJ6Jti8mj7FpLWrFTox0CBqbEquV1Q+ueJvOK4DiAZiNFkK4udAQt9/rXgpYfLMOvtvqctvEMmqEc4awwmvOYNQxthx2ieNcFoRdlIygCV4sPD2M9elYHe9rOp/I0dJ9AdtoHtONJcv/0pcwd2/lIKjVKdVq7fVCn+ew8kXiFvChNktc3S81TwLi/2tsxM6ruzJmnlFDPXAvqaBYrntWdffTJ8H1WqvWjyJjyRQjnraMAvBZwIHyEL/0VilbkZH2Qj6RxCDPtEQGvpUSpQfJt7ecXwY60D+y4g+eVe8nki346FoVRxwCfn/JMaJ+QQbiZW45XK29mgn4r3bKDgeeIVP12c1+UU60A5lfn7q3NSjKTV1TFdwmR0yoLmQgVhfg50hZfw7cLuh/Sv+zzAceeOt/P162Q/G6xzTfUEse57OVXgXK/LI2KEs++mwz1v26fVKxCCDbnw7piUJ9LDS5gi7hyg/TWWvfG4TFfdSIki/vBz+ToaBfVLa3Jp8sFQ9vpY94AA=="
+                  alt="customer"
+                  class="img-fluid"
+                />
+                <span class="ms-8 align-middle">Wilma Mumduya</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 custom-border border-end-lg-0">
+            <div class="lover-box">
+              <div class="lover-text mb-36">
+                <!-- rating -->
+                <ul class="d-flex align-items-center gap-4 p-0">
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                  <li><i class="fa-solid fa-star text-warning"></i></li>
+                </ul>
+                <!-- text -->
+                <p class="fs-24">
+                  "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter
+                  labore et dolore magna.
+                </p>
+              </div>
+              <div class="lover-img mb-24">
+                <img
+                  src="data:image/webp;base64,UklGRlADAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMYAAAABgFTbdt3mQrgQBEkQDEEQLhMbgkYZa56kFhMLgNd6/erzVgFExARgMKRcqlktOQXMp07rPsU51GXDTZywXTa1xSHZdPVxt4U7e3ZbunfIFuuPzZbHX9jWNf6QORQAXh4uAjKXAk4fJ4I5DclLyl5y8VKql9P+3eqlFi+P7CZ5ScFLQPVRAfkQQBeNAORBAMC2rvEH4rqI37VK+PtYc6CTh9k97WAPILvvScLodtvUFjFOtbEmYipV+54i5oeUy9OsPh8pYBBWUDggZAIAAPAKAJ0BKigAKAA+bSqQRaQioZccBzBABsSgC7M5HoYKSt0HLaDCVKOgiI6yVaGpmxZ9cxiDk1F84Z//pUPAwmuZ7jAwcVdiZqidlWNBA8bJ4sRPGL8HPsl7bwzb50X0AAD+/VPsHHHvO2GNk+1DCeP4wXYlDANpeXfhkbd+II9pGcevOT+pEk+tAGzMa2Hhme8vjFo8KBu7bC9QLvR7zaux4ijV9BODW3uGwOTrXyFfsH42z+Ym751WGJfKVMOr8X5bT0vUNvWOGI6/HnNgY4VBZhxW2Xvw5fMVoMysSfc/fJ6Jti8mj7FpLWrFTox0CBqbEquV1Q+ueJvOK4DiAZiNFkK4udAQt9/rXgpYfLMOvtvqctvEMmqEc4awwmvOYNQxthx2ieNcFoRdlIygCV4sPD2M9elYHe9rOp/I0dJ9AdtoHtONJcv/0pcwd2/lIKjVKdVq7fVCn+ew8kXiFvChNktc3S81TwLi/2tsxM6ruzJmnlFDPXAvqaBYrntWdffTJ8H1WqvWjyJjyRQjnraMAvBZwIHyEL/0VilbkZH2Qj6RxCDPtEQGvpUSpQfJt7ecXwY60D+y4g+eVe8nki346FoVRxwCfn/JMaJ+QQbiZW45XK29mgn4r3bKDgeeIVP12c1+UU60A5lfn7q3NSjKTV1TFdwmR0yoLmQgVhfg50hZfw7cLuh/Sv+zzAceeOt/P162Q/G6xzTfUEse57OVXgXK/LI2KEs++mwz1v26fVKxCCDbnw7piUJ9LDS5gi7hyg/TWWvfG4TFfdSIki/vBz+ToaBfVLa3Jp8sFQ9vpY94AA=="
+                  alt="customer"
+                  class="img-fluid"
+                />
+                <span class="ms-8 align-middle">Wilma Mumduya</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="mb-30 d-flex justify-content-between align-items-center">
+          <h2 class="poiret fs-24 fs-md-30">Our Blogs</h2>
+          <a href="#" class="order-btn">MORE BLOG</a>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-xl-2 gy-24" data-aos="zoom-in">
+          <div class="col">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img
+                    src="/cakeshop-bs-layout/assets/blog1.jpg-C34Dikje.webp"
+                    class="rounded-start w-100 mh-305 mh-md-370 h-100 object-fit-cover"
+                    alt="blog1"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="card-body custom-border border-start-0 h-100 d-flex flex-column justify-content-between py-60 px-40 p-xl-30"
+                  >
+                    <div class="">
+                      <h5 class="card-title text-primary poiret fs-24 mb-20">
+                        Tomato, black olive, feta & anchovy tart ulla mco
+                        laboris
+                      </h5>
+                      <p class="card-text mb-30">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor dunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercita
+                        tion ullamco laboris nisi ut aliquip.
+                      </p>
+                    </div>
+                    <div class="">
+                      <a href="#" class="link-primary custom-learnMore-btn"
+                        >LEARN MORE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img
+                    src="/cakeshop-bs-layout/assets/blog2.jpg-KHcHw6Ce.webp"
+                    class="rounded-start w-100 mh-305 mh-md-370 h-100 object-fit-cover"
+                    alt="blog2"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="card-body custom-border border-start-0 h-100 d-flex flex-column justify-content-between py-60 px-40 p-lg-30"
+                  >
+                    <div class="">
+                      <h5 class="card-title text-primary poiret fs-24 mb-20">
+                        Tomato, black olive, feta & anchovy tart ulla mco
+                        laboris
+                      </h5>
+                      <p class="card-text mb-30">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor dunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercita
+                        tion ullamco laboris nisi ut aliquip.
+                      </p>
+                    </div>
+                    <div class="">
+                      <a href="#" class="link-primary custom-learnMore-btn"
+                        >LEARN MORE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Follow us on Instagram -->
+    <section>
+      <div class="container">
+        <div class="d-flex flex-column align-items-center gap-30 mb-30">
+          <h2 class="poiret fs-24 fs-md-30">Follow us on Instagram</h2>
+          <div data-aos="zoom-in">
+            <a
+              class="btn btn-outline-primary px-20 py-12 rounded-0 d-inline-block mx-auto"
+              ><i class="fa-brands fa-instagram me-8"></i>Cakeshop</a
+            >
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-20 gy-lg-0"
+          data-aos="zoom-in"
+        >
+          <div class="col">
+            <a class="d-block h-100">
+              <img
+                src="/cakeshop-bs-layout/assets/instra1.jpg-BWYOzj0e.webp"
+                alt="ig1"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a class="d-block h-100">
+              <img
+                src="/cakeshop-bs-layout/assets/instra2.jpg-rbNVy85y.webp"
+                alt="ig2"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a class="d-block h-100">
+              <img
+                src="/cakeshop-bs-layout/assets/instra3.jpg-BUUj8bcq.webp"
+                alt="ig3"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <a class="d-block h-100">
+              <img
+                src="/cakeshop-bs-layout/assets/instra4.jpg-XlXr05Db.webp"
+                alt="ig4"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer data-aos="zoom-in">
+      <div class="container">
+        <div
+          class="d-md-flex align-items-center justify-content-between pb-20 custom-bottom-border"
+        >
+          <a href="#">
+            <img src="data:image/webp;base64,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" class="img-fluid" alt="logo" />
+          </a>
+          <nav>
+            <ul class="navbar-nav flex-row gap-20">
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">Cakes</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-light">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="py-60">
+          <div class="row gy-20">
+            <div class="col-md-10 col-lg-5 me-auto mb-40">
+              <p class="mb-40">
+                Consectetur adipiscing elit, sed do eiusmod tempor dunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercita tion ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+              <div class="row row-cols-3 gx-8">
+                <div class="col">
+                  <a type="button" class="media-btn">
+                    <i class="fa-brands fa-instagram me-8"></i>Instagram
+                  </a>
+                </div>
+                <div class="col">
+                  <a type="button" class="media-btn">
+                    <i class="fa-brands fa-facebook me-8"></i>Facebook
+                  </a>
+                </div>
+                <div class="col">
+                  <a type="button" class="media-btn">
+                    <i class="fa-brands fa-twitter me-8"></i>Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+              <div class="">
+                <i class="fa-solid fa-location-arrow fs-24 mb-16"></i>
+                <h4 class="text-primary fs-24 poiret">Location</h4>
+                <p>4736 Poe Lane, HOT SPRINGS, Montana-59845</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2 ms-auto">
+              <div class="">
+                <i class="fa-solid fa-phone fs-24 mb-16"></i>
+                <h4 class="text-primary fs-24 poiret">Contact</h4>
+                <p class="mb-8">913-473-7000</p>
+                <p>contact@cakeshop.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="container">
+          <div class="text-center">
+            <p>
+              Copyright ©2024 All rights reserved | This template is made with<i
+                class="fa-solid fa-heart text-primary mx-8"
+              ></i>
+              by
+              <a href="https://colorlib.com/wp/templates/" target="_blank"
+                >Colorlib</a
+              >
+            </p>
+            <p>僅供練習非商用</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- 
+
+  https://preview.colorlib.com/#cakeshop
+ -->
